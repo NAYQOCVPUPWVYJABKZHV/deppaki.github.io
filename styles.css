@@ -94,6 +94,29 @@ header nav ul li a:hover {
 }
 
 /* Produk Section */
+/* Produk Section */
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: calc(33% - 20px); /* Tiga kolom di layar besar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 20px); /* Dua kolom di perangkat kecil */
+    }
+}
 .products {
     background-color: #fff;
     padding: 50px 20px;
