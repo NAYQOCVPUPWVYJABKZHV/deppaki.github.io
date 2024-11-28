@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deppa Ki' - Nikmati Snack dan Kopi Khas Toraja">
+    <title>Deppa Ki' - Snack & Kopi Toraja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="images/logo.jpg" alt="Logo Deppa Ki'" class="logo"> <!-- Logo -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2 class="fade-in">Rasakan Cita Rasa Toraja di Setiap Gigitan</h2>
+        <button onclick="scrollToSection('products')">Belanja Sekarang</button>
+    </section>
+
+    <!-- Produk -->
+    <section id="products" class="products">
+        <h2 class="slide-in">Produk Kami</h2>
+        <div class="product-list">
+            <!-- Snack -->
+            <div class="product-item zoom-effect">
+                <img src="images/snack.jpeg" alt="Snack Khas Toraja">
+                <h3>Snack Toraja</h3>
+                <p>Rp 20.000</p>
+                <button onclick="addToCart('Snack Toraja')">Tambah ke Keranjang</button>
+            </div>
+            <!-- Kopi -->
+            <div class="product-item zoom-effect">
+                <img src="images/coffee.jpg" alt="Kopi Khas Toraja">
+                <h3>Kopi Toraja</h3>
+                <p>Rp 30.000</p>
+                <button onclick="addToCart('Kopi Toraja')">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="about" class="about">
+        <h2>Tentang Deppa Ki'</h2>
+        <p>
+            Deppa Ki' adalah bisnis yang menghadirkan snack dan kopi khas Toraja
+            untuk melestarikan budaya Indonesia dan memperkenalkan cita rasa khas Toraja ke seluruh negeri.
+            Kami berkomitmen untuk menjaga keaslian rasa dengan bahan-bahan terbaik dan mendukung perekonomian lokal Toraja.
+        </p>
+    </section>
+
+    <!-- Kontak Kami -->
+    <section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <form>
+            <input type="text" name="name" placeholder="Nama" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Deppa Ki'. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
