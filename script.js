@@ -24,7 +24,7 @@ function addToCart(product) {
     }, 3000);
 }
 
-// Event listener untuk menambahkan fungsi smooth scroll ke semua tombol
+// Event listener untuk smooth scroll pada semua link
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault();
